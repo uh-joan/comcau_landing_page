@@ -1,0 +1,146 @@
+
+/* raleway-500 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/raleway-v11-latin-500.eot'); /* IE9 Compat Modes */
+    src: local('Raleway Medium'), local('Raleway-Medium'),
+    url('../assets/fonts/raleway-v11-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../assets/fonts/raleway-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../assets/fonts/raleway-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../assets/fonts/raleway-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../assets/fonts/raleway-v11-latin-500.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* chango-regular - latin */
+@font-face {
+    font-family: 'Chango';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/chango-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Chango Regular'), local('Chango-Regular'),
+    url('../assets/fonts/chango-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../assets/fonts/chango-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../assets/fonts/chango-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../assets/fonts/chango-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../assets/fonts/chango-v5-latin-regular.svg#Chango') format('svg'); /* Legacy iOS */
+}
+
+/* asset-regular - latin */
+@font-face {
+    font-family: 'Asset';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/asset-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Asset'),
+    url('../assets/fonts/asset-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../assets/fonts/asset-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../assets/fonts/asset-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../assets/fonts/asset-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../assets/fonts/asset-v6-latin-regular.svg#Asset') format('svg'); /* Legacy iOS */
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+#container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    background-color: #fff10b;
+    z-index:-1; /* Remove this line if it's not going to be a background! */
+    overflow-y: auto;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0;
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.particles-js-canvas-el {
+    position: absolute !important;
+    top: 0 !important;
+}
+
+.comcau-icon {
+    font-family: 'Chango', 'sans-serif';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3em;
+    color: #f46b23;
+    font-weight: 900;
+}
+.tagline {
+    color: #f35c26;
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 5vh;
+    font-family: 'Raleway', 'sans-serif';
+    text-align: center;
+    /*color: #666665;*/
+}
+
+.see-more {
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 5vh;
+    font-family: 'Raleway', 'sans-serif';
+    text-align: center;
+    /*color: #666665;*/
+}
+
+.img-first, .img-second {
+    margin-top: 25vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-second {
+    margin-top: 0;
+}
+
+.store {
+    margin-top: 5vh;
+}
+
+.particles-js-canvas-el {
+    z-index: -1 !important;
+}
+
+@media screen and (max-width: 960px) {
+    .tagline {
+        font-size: 1.4em;
+    }
+    .see-more {
+        font-size: 1.8em;
+    }
+    .my-chevron {
+        font-size: 1em;
+    }
+    .store {
+        margin-top: 2vh;
+    }
+}
